@@ -39,7 +39,7 @@ All the kept rules in the MAIN_GRAMMAR have been reformatted and indented
 similar (but not identical) to the formatting used in the C11 grammar. This
 grep command will extract only the kept rules, and hints at the formatting:
 
-     grep -E '^([A-Za-z_][A-Za-z_]*( *[/].*)?$|        [:|;])'
+     grep -E '^([A-Za-z_][A-Za-z_]*( *[/].*)?$|        [:|;])' C23.y
 
 (Note that indentation is spaces only, no tabs. For diffing with the C11.y
 grammar, if you wish to do so, either use diff -w or replace all indentation
