@@ -16,6 +16,9 @@ jutta@pobox.com, 2012
 
 Last edit: 2012-12-19 DAGwyn@aol.com
 Note: The following %-parameters are the minimum sizes needed for real Lex.
+
+Further edited by Lasse H. P. 2024-05-13 for use with a C23 grammar.
+Note: this is not a completed version, but still a work-in-progress...
 */
 %option reentrant
 %option bison-bridge
