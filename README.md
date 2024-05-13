@@ -49,11 +49,11 @@ I have left in some #include lines which refer to code I am working on. This
 code is not provided as of yet. Edit to suit your needs. The Bison and flex
 preambles are set up (as best as I could) for reentrant parsing and using
 parse-param to provide a pointer to a structure for housekeeping and
-returning a parse result. Likewise, the C23.l file contains a call to a
-function make_cst_leafnode(). The result is kept in the yyextra variable,
-so each token will have a reference to any preceding whitespace and
-comments. Maybe one day I'll publish the code, but I suggest you just remove
-what you can't use, and/or adapt it to your needs.
+returning a parse result. Likewise, the C23.l file contains a USER_ACTION
+with a call to a function make_cst_leafnode(). The result is kept in the
+yyextra variable, so each token will have a reference to any preceding
+whitespace and comments. Maybe one day I'll publish the code, but I suggest
+you just remove what you can't use, and/or adapt it to your needs.
 
 The lexer has been "casually" and minimally updated for C23, but I have not
 implemented the exact lexical rules as given by n3220.pdf yet. Mainly it is
